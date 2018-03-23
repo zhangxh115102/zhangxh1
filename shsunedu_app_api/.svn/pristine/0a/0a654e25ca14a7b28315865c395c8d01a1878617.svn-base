@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/2002/xmlspec/dtd/2.10/xmlspec.dtd">
-<!-- spring boot 默认会加载该文件 -->
-<configuration debug="true" scan="true" scanPeriod="5 seconds">
-	<contextName>shsunedu_app_api</contextName>
-	<!-- 默认为local -->
-	<include resource="config/logback-${envTarget:-local}.xml" />
-</configuration>
