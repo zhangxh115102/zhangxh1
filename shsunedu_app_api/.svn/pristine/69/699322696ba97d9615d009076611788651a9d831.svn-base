@@ -1,0 +1,20 @@
+#REDIS CONFIG
+redis.host=http://172.16.0.24:6379
+#DUBBO CONFIG
+dubbo.registry.address=zookeeper://172.16.0.35:2181?backup=172.16.0.25:2181,172.16.0.45:2181
+dubbo.monitor.address=dubbo://172.16.0.35:7070
+
+#########OSS START############
+oss.accessKeyId=LTAI3o1OZHRkwtpw
+oss.accessKeySecret=ZyXeu0KourFVd48owjcDAovN9uy7rq
+oss.in.url=https://oss-cn-beijing-internal.aliyuncs.com
+oss.out.url=https://oss-cn-beijing.aliyuncs.com
+oss.bucket.name=ekuakao
+#########OSS END##############
+
+#GENSEE CONFIG
+gensee.domain=kuakao.gensee.com
+
+
+# classroom/classroomBag shareURL
+shareURL_prefix=http://www.kaisenxue.com/

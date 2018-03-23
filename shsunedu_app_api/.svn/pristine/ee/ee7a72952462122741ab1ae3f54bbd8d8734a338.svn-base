@@ -1,0 +1,113 @@
+out: style.css
+
+@import url('function.less');
+
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+fieldset, img { border:none; }
+img{display: block;}
+address, caption, cite, code, dfn, th, var, i{ font-style:normal; font-weight:normal; }
+ul, ol { list-style:none; }
+input { padding-top:0; padding-bottom:0; font-family: "SimSun","宋体";}
+input::-moz-focus-inner { border:none; padding:0; }
+select, input { vertical-align:middle; }
+select, input, textarea { font-size:12px; margin:0; }
+input[type="text"], input[type="password"], textarea { outline-style:none; -webkit-appearance:none; }
+textarea { resize:none; }
+input,textarea{background: none; border: none;}
+table { border-collapse:collapse; }
+body { width: 100%; margin: 0 auto; color:#333; background:#fff; }
+html {font-family: "FZLanTingHei-L-GBK", "Helvetica Neue", "微软雅黑", "黑体", Helvetica, STHeiTi, sans-serif;-webkit-tap-highlight-color:rgba(0, 0, 0, 0);font-size: 100px;}
+a { color:#666; text-decoration:none; }
+a:visited { color:#1a1a1a; }
+a:hover, a:active, a:focus {text-decoration:none; }
+.fl{float: left;}
+.fr{float: right;}
+.clearfix { zoom:1;}
+.clearfix:after { content:".";display:block;height:0;clear:both; visibility:hidden;}
+
+/*自定义alert*/
+.alert { position: fixed; left: 0; top:0; right:0; bottom:0; background-color: rgba(0,0,0,0.45); z-index: 9999999999;}
+.alertInner { width: 4.6rem; background-color: #f8f8f8; border-radius: 0.1rem; position: fixed; left: 50%;margin-left: -2.3rem; }
+.alertInner h2 { text-align: center; border-bottom: 1px solid #ddd; padding:0.2rem; line-height:1.5;font-size: 0.28rem; color: #252525; }
+.alertInner a { display: block; height: 0.8rem; line-height: 0.8rem; font-size: 0.32rem; color: #005bac; text-align: center;}
+
+/*仿confirm*/
+.confirmeBox {position: fixed;left: 0;top: 0;right: 0;bottom: 0;background-color: rgba(0, 0, 0, 0.8);z-index: 9999;}
+.confirmeBoxInner { width: 4.6rem;background-color: #f8f8f8;border-radius: 0.1rem; position: fixed;left: 50%;top: 50%; margin-left: -2.3rem; margin-top: -1.52rem;overflow: hidden;}
+.confirmeBoxInner h2 {text-align: center;border-bottom: 1px solid #ddd; height: 0.88rem;line-height: 0.88rem; font-size: 0.28rem;color: #252525; }
+.confirmeBoxInner div { padding: 0.5rem;  font-size: 0.3rem; text-align: center;}
+.confirmeBoxInner .btnGroup {border-top: 1px solid #ddd}
+.confirmeBoxInner a {display: block;height: 0.8rem;line-height: 0.8rem; font-size: 0.32rem;color: #005bac; text-align: center; width: 50%; float: left;}
+.confirmeBoxInner a:hover { background-color: #eee; }
+
+/* flex */
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.flex-v {
+  -webkit-box-orient:vertical;
+  flex-direction:column;
+}
+.flex-h {
+  -webkit-box-orient:horizontal;
+  flex-flow: row;
+}
+.flex-ce-c {
+  align-items: center;
+  -webkit-box-align: center;
+}
+.flex-zhu-c {
+  justify-content: center;
+  -webkit-box-pack: center;
+}
+.flex-spaceBetween {
+  justify-content: space-between;
+  -webkit-box-pack: justify;
+}
+
+
+/* szk */
+html, body{
+    background: #f7f7f7;
+}
+
+
+.main{
+    background: #fff;
+    border-top: 1px solid #e7e7e7;
+    padding: .8rem .3rem;
+    h3{
+        border-bottom: 1px solid #e7e7e7;
+        font-size: .4rem;
+        margin-bottom: .4rem;
+        padding-bottom: .4rem;
+        text-align: center;
+    }
+    h4{
+        font-size: .32rem;
+        padding: .2rem 0;
+    }
+    p{
+        font-size: .28rem;
+        color: #666666;
+        line-height: .5rem;
+        span{
+            color: #38bbff;
+        }
+    }
+}
+.footer1{
+    position: fixed;
+    bottom: .4rem;
+    left: 50%;
+    p{
+        width: 6.5rem;
+        font-size: .2rem;
+        color: #dcdcdc;
+        text-align: center;
+        margin-left: -50%;
+
+    }
+}
